@@ -1,0 +1,55 @@
+.each-card {
+  box-sizing: border-box;
+  width: 686rpx;
+  height: 160rpx;
+  padding: 0 32rpx;
+  margin: 24rpx auto;
+  background: url("https://images.allcitygo.com/20200925143347088YMFpXk.png") no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-icon image {
+  display: inline-block;
+  width: 80rpx;
+  height: 80rpx;
+}
+.middle-part {
+  flex: 1;
+  height: 80rpx;
+  margin-left: 24rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.middle-line-one {
+  font-size: 28rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  color: #000000;
+  line-height: 40rpx;
+}
+.middle-line-two {
+  font-size: 22rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(0,0,0,0.3);
+  line-height: 32rpx;
+}
+.right-btn {
+  box-sizing: border-box;
+  width: 128rpx;
+  height: 56rpx;
+  border: 2rpx solid #0080ff;
+  border-radius: 28rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  text-align: center;
+  color: #0080ff;
+  line-height: 40rpx;
+}

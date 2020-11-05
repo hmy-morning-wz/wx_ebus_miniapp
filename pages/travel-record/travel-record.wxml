@@ -1,0 +1,38 @@
+<wxs module="filters" src="../../utils/filters.wxs"></wxs>
+<view class="container-travel-record">
+  <view class="none-records" wx:if="{{travelRecords.length <= 0}}">
+    <image src="https://images.allcitygo.com/20200907151242393cdScbZ.png" mode="widthFix">
+    </image>
+    <view class="none-text">
+      您还没有行程记录
+    </view>
+  </view>
+  <view class="travel-record-list" wx:else>
+    <block wx:for="{{travelRecords}}" wx:key="index">
+      <view class="each-record" bindtap="bindViewTap" data-obj="{{item}}">
+        <view class="left-icon">
+          <image class="bus-icon" src="https://images.allcitygo.com/20200925143506914NFf8zQ.png" mode="widthFix"></image>
+        </view>
+        <view class="middle-part">
+          <view class="middle-line-one">
+            <view class="line-name">
+              {{item.lineName}}
+              <text wx:if="{{item.cityName}}" class="city-name">{{item.cityName}}</text>
+            </view>
+            <view class="record-price">
+              -{{ filters.changeFixedTwo(item.amount) }}
+            </view>
+          </view>
+          <view class="middle-line-two">
+            {{item.rideTime}}
+          </view>
+        </view>
+        <view class="right-arrow">
+          <image class="arrow-icon" src="https://images.allcitygo.com/20200824151908309LfnTgc.png" mode="widthFix"></image>
+        </view>
+      </view>
+      <view class="gray-line"></view>
+    </block>
+    <view class="no-more-tips">无更多记录</view>
+  </view>
+</view>

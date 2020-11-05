@@ -1,0 +1,137 @@
+.container-get-card {
+  background: #fff;
+}
+/* header */
+.get-card-header {
+  width: 750rpx;
+  height: 563rpx;
+  position: relative;
+  background: url('https://images.allcitygo.com/20200925143306482srWkGl.png') no-repeat;
+  background-size: 100% 100%;
+}
+.city-picker {
+  position: absolute;
+  top: 112rpx;
+  left: 32rpx;
+  height: 40rpx;
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  font-family: PingFangSC, PingFangSC-Medium;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 40rpx;
+}
+.picker-arrow {
+  width: 24rpx;
+  height: 24rpx;
+  margin-left: 12rpx;
+}
+/* body */
+.get-card-body {
+  text-align: center;
+}
+.city-card-title {
+  width: 100%;
+  margin-top: 56rpx;
+  font-size: 40rpx;
+  font-family: PingFangSC, PingFangSC-Semibold;
+  font-weight: 600;
+  color: #000000;
+  line-height: 56rpx;
+}
+.sub-title {
+  width: 100%;
+  margin-top: 12rpx;
+  font-size: 28rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  color: #888888;
+  line-height: 40rpx;
+}
+.marketing-icons {
+  margin-top: 64rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.each-col {
+  font-size: 26rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  color: #888888;
+  line-height: 37rpx;
+}
+.each-col image {
+  width: 80rpx;
+  height: 80rpx;
+  margin-bottom: 18rpx;
+}
+/* bottom */
+.get-card-bottom {
+  margin-top: 46rpx;
+  padding: 0 32rpx;
+}
+.float-tips {
+  width: 262rpx;
+  height: 53rpx;
+  margin-bottom: 8rpx;
+  padding-top: 13rpx;
+  background: url('https://images.allcitygo.com/20200820155335471weh8lF.png') no-repeat;
+  background-size: 100% 100%;
+  font-size: 22rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  line-height: 30rpx;
+}
+.none-tips {
+  width: 262rpx;
+  height: 66rpx;
+  margin-bottom: 8rpx;
+}
+.argument-img {
+  width: 44rpx;
+  height: 44rpx;
+  margin-right: 12rpx;
+  margin-bottom: 8rpx;
+  vertical-align: middle;
+}
+.argument-text {
+  opacity: 0.9;
+  font-size: 26rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  text-align: justify;
+  color: #b2b2b2;
+  line-height: 40rpx;
+}
+.argument-text text{
+  opacity: 1;
+  color: #67799F;
+}
+.get-card-btn {
+  width: 630rpx !important;
+  height: 96rpx;  
+  position: fixed;
+  bottom: 50rpx;
+  left: 60rpx;
+  /* margin: 135rpx auto 50rpx; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0080ff;
+  border-radius: 49rpx;
+  outline: none;
+  font-size: 36rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  text-align: justify;
+  color: #ffffff;
+  line-height: 52rpx;
+}
+button[disabled] {
+  background-color: #b2b2b2 !important;
+  color: #ffffff !important;
+}
+  

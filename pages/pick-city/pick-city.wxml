@@ -1,0 +1,8 @@
+<view class="container-pick-city">
+  <block wx:for="{{cityList}}" wx:key="index">
+    <view class="each-city" bindtap="bindPickCity" data-obj="{{item}}">
+      {{item.cityName}}
+    </view>
+    <view class="bot-line"></view>
+  </block>
+</view>

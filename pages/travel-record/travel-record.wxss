@@ -1,0 +1,109 @@
+.each-record {
+  padding: 0 32rpx;
+  height: 160rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-icon image {
+  display: inline-block;
+  width: 80rpx;
+  height: 80rpx;
+}
+.right-arrow image {
+  display: inline-block;
+  width: 44rpx;
+  height: 44rpx;
+}
+.middle-part {
+  width: 514rpx;
+  height: 80rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.middle-line-one {
+  display: flex;
+  justify-content: space-between;
+}
+.line-name {
+  font-size: 28rpx;
+  font-family: PingFangSC, PingFangSC-Medium;
+  font-weight: 500;
+  color: #000000;
+  line-height: 40rpx;
+}
+.city-name {
+  position: relative;
+  display: inline-block;
+  /* width: 72rpx; */
+  height: 36rpx;
+  padding: 0 12rpx;
+  margin-left: 12rpx;
+  border: 1rpx solid #068eff;
+  border-radius: 36rpx;
+  font-size: 22rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  text-align: center;
+  color: #068cff;
+  line-height: 36rpx;
+}
+.record-price {
+  font-size: 40rpx;
+  font-family: DINAlternate, DINAlternate-Bold;
+  font-weight: 700;
+  color: #000000;
+  line-height: 40rpx;
+}
+.middle-line-two {
+  font-size: 22rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(0,0,0,0.3);
+  line-height: 32rpx;
+}
+.gray-line {
+  position: relative;
+  width: 582rpx;
+}
+.gray-line::after {
+  position: absolute;
+  content: "";
+  left: 136rpx;
+  bottom: 0;
+  width: 582rpx;
+  height: 1px;
+  background-color: #E5E5E5;
+  -webkit-transform: scaleY(.5);
+  transform:scaleY(.5)  
+}
+.none-records {
+  padding-top: 200rpx;
+  text-align: center;
+}
+.none-records image {
+  display: block;
+  width: 500rpx;
+  height: 250rpx;
+  margin: 0 auto;
+  margin-bottom: 40rpx;
+}
+.none-text {
+  opacity: 0.65;
+  font-size: 26rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  text-align: center;
+  color: #0080ff;
+  line-height: 37rpx;
+}
+.no-more-tips {
+  margin-top: 32rpx;
+  font-size: 22rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(0,0,0,0.3);
+  line-height: 32rpx;
+  text-align: center;
+}

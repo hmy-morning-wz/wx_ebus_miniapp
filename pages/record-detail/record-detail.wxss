@@ -1,0 +1,83 @@
+/* pages/record-detail/record-detail.wxss */
+.container-record-detail {
+  min-height: 100vh;
+  background-color: #F7F7FA;
+}
+
+.top-amount {
+  padding: 80rpx 0;
+  margin-bottom: 16rpx;
+  background-color: white;
+  text-align: center;
+}
+
+.money-amount {
+  margin-bottom: 8rpx;
+  font-size: 64rpx;
+  font-family: DINPro, DINPro-Medium;
+  font-weight: 500;
+  text-align: center;
+  color: #000000;
+  line-height: 64rpx;
+}
+
+.pay-status {
+  font-size: 28rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  line-height: 40rpx;
+}
+
+.bot-info {
+  padding: 16rpx 32rpx;
+  background-color: white;
+}
+
+.info-line {
+  width: 100%;
+  height: 88rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info-left {
+  font-size: 26rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  color: #888888;
+  line-height: 37rpx;
+}
+
+.info-right {
+  font-size: 26rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  color: #000000;
+  line-height: 37rpx;
+}
+
+.none-records {
+  padding-top: 200rpx;
+  text-align: center;
+}
+
+.none-records image {
+  display: block;
+  width: 500rpx;
+  height: 250rpx;
+  margin: 0 auto;
+  margin-bottom: 40rpx;
+}
+
+.none-text {
+  opacity: 0.65;
+  font-size: 26rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  text-align: center;
+  color: #0080ff;
+  line-height: 37rpx;
+}

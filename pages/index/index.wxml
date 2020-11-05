@@ -1,0 +1,56 @@
+<!--index.wxml-->
+<view class="container-index" wx:if="{{!isLoading}}">
+	<view class="city-picker" bindtap="pickCity">
+		{{cityName}}
+		<image class="picker-arrow" src="https://images.allcitygo.com/20200820150435005tlqdKP.png" mode="widthFix"></image>
+	</view>
+	<view style="padding-top: 200rpx;"></view>
+	<button class="userinfo-btn" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+		<view class="user-line">
+			<image class="user-icon" src="{{userIcon}}" mode="widthFix"></image>
+			<view class="user-name">{{nickName}}</view>
+			<image class="tap-arrow" src="https://images.allcitygo.com/20200825141031163HAsAXE.png" mode="widthFix"></image>
+		</view>
+	</button>
+	<view class="main-body">
+		<view class="card-name">
+			{{cardName}}
+		</view>
+		<view class="code-ban">
+			<block class="main-qrcode" wx:if="{{!disabled}}">
+				<view class='main-qrcode-sec' bindtap="doRefresh">
+					<image src="{{qrCodeImg}}" mode='widthFix'></image>
+				</view>
+				<view class="main-qrcode-refresh" wx:if="{{refreshStatus}}">
+					<image src="https://images.allcitygo.com/20200825155040059anaySN.png"></image>
+					<text>二维码刷新成功</text>
+				</view>
+				<view class="main-qrcode-refresh" wx:else>
+					<image class="{{isSocketConnected?'':'turn'}}" src="https://images.allcitygo.com/20200825153846163j1nBNl.png" bindtap="doRefresh"></image>
+					<text>请点击二维码刷新</text>
+				</view>
+			</block>
+			<block class="main-disabled" wx:if="{{disabled}}">
+				<block class="situation" wx:if="{{disableCode === 2}}">
+					<view class="warn-img">
+						<image src="/resource/images/net_error.png" mode="widthFix"></image>
+					</view>
+					<view class="error-msg">网络中断</view>
+					<view class="error-supply">请检查网络刷新后使用</view>
+					<view class="refresh-btn" bindtap="doRefresh">刷新</view>
+				</block>
+				<block class="situation" wx:if="{{disableCode === 1}}">
+					<view class="warn-img">
+						<image src="https://images.allcitygo.com/2020082516384736843jDzt.png" mode="widthFix"></image>
+					</view>
+					<view class="error-msg">{{disabledTips}}</view>
+					<view class="error-supply" wx:if="{{disableCode2=='TRIP_PAY_FAILED'}}">存在扣款失败订单，请稍后再次使用</view>
+					<view class="refresh-btn" bindtap="signAgain" wx:if="{{disableCode2=='CARD_UNSIGNED'}}">
+						去签约
+					</view>
+				</block>
+			</block>
+		</view>
+	</view>
+	<!-- <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取手机号</button> -->
+</view>

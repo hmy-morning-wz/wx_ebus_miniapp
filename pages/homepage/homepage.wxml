@@ -1,0 +1,17 @@
+<view class="container-homepage">
+  <view class="userinfo">
+    <image src="{{userIcon}}" mode="widthFix"></image>
+    {{nickName}}
+  </view>
+  <view class="menu-line">
+    <view class="menu-banner" bindtap="handleJumpRecords">
+      <image src="https://images.allcitygo.com/202008241558343679Qt7l4.png" mode="widthFix"></image>
+      乘车记录
+    </view>
+    <view class="gray-column"></view>
+    <view class="menu-banner" bindtap="handleJumpCards">
+      <image src="https://images.allcitygo.com/20200925143529249AMbZYV.png" mode="widthFix"></image>
+      我的卡片
+    </view>
+  </view>
+</view>

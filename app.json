@@ -1,0 +1,27 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/pick-city/pick-city",
+    "pages/webview/webview",
+    "pages/homepage/homepage",
+    "pages/my-cards/my-cards",
+    "pages/travel-record/travel-record",
+    "pages/record-detail/record-detail",
+    "pages/scan-succ/scan-succ",
+    "pages/get-card/get-card"    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将用于更好的乘车服务"
+    }
+  },
+  "serviceProviderTicket": "WoD9mFRTk3m9zmdvvkdmFbNnrdp7wZR3lOjY0oJd4ZRJ+FQ/iJvH9+B7PXV0Kooq4BxbiVwU4HHL2a6aOPQrX1Jv6O4GaPIEJVI="
+}

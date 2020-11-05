@@ -1,0 +1,14 @@
+<view class="container-scan-succ">
+  <view class="success-ban">
+    <image src="https://images.allcitygo.com/20200925160221097rg9cMJ.png" mode="widthFix"></image>
+    扫码成功
+  </view>
+  <view class="two-btn">
+    <view class="each-btn btn-left" bindtap="handleDetail">
+      查看订单
+    </view>
+    <view class="each-btn btn-right" bindtap="handleScan">
+      再刷一笔
+    </view>
+  </view>
+</view>

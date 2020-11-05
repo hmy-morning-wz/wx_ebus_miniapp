@@ -1,0 +1,22 @@
+<view class="container-my-cards">
+  <view class="my-cards-list">
+    <block wx:for="{{cardLists}}" wx:key="index">
+      <view class="each-card">
+        <view class="left-icon">
+          <image class="bus-icon" src="https://images.allcitygo.com/20200925143427834WdpaFj.png" mode="widthFix"></image>
+        </view>
+        <view class="middle-part">
+          <view class="middle-line-one">
+            {{item.cardName}}
+          </view>
+          <view class="middle-line-two">
+            卡号:{{item.cardNo}}
+          </view>
+        </view>
+        <view class="right-btn" bindtap="bindViewTap" data-obj="{{item}}">
+          去乘车
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

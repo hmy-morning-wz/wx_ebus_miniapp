@@ -1,0 +1,20 @@
+{
+  "name": "gobybus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "@tklc/miniapp-tracker-sdk": "^0.0.23",
+    "miniprogram-sm-crypto": "^0.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.allcitygo.com:front/wx_ebus_miniapp.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

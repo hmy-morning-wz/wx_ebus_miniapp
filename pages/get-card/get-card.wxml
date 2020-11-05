@@ -1,0 +1,40 @@
+<view class="container-get-card">
+	<view class="get-card-header">
+		<view class="city-picker" bindtap="pickCity">
+			{{cityName}}
+			<image class="picker-arrow" src="https://images.allcitygo.com/20200820150435005tlqdKP.png" mode="widthFix"></image>
+		</view>
+	</view>
+	<view class="get-card-body">
+		<view class="city-card-title">
+			{{cardName}}
+		</view>
+		<view class="sub-title">
+			智慧城市·便捷乘公交
+		</view>
+		<view class="marketing-icons">
+			<block wx:for="{{iconList}}" wx:key="index">
+				<view class="each-col">
+					<image class="picker-arrow" src="{{item.icon}}" mode="widthFix"></image>
+					<view>
+						{{item.desc}}
+					</view>
+				</view>
+			</block>
+		</view>
+	</view>
+	<view class="get-card-bottom">
+		<view class="float-tips" hidden="{{checked}}">
+			请先阅读并同意协议
+		</view>
+		<view class="none-tips" hidden="{{!checked}}"></view>
+		<view class="argument-text">
+			<image wx:if="{{checked}}" bindtap="checkCircle" class="argument-img" src="https://images.allcitygo.com/20200820180828192ZQzdSg.png" mode="widthFix"></image>
+			<image wx:else bindtap="checkCircle" class="argument-img" src="https://images.allcitygo.com/20200820180720869qqgU6g.png" mode="widthFix"></image>
+			开通并同意<text bindtap="seeProtocol">《乘车通使用协议》</text>以便为你提供更好的乘车码服务
+		</view>
+		<view>
+			<button class="get-card-btn" disabled="{{(!checked || btnLoading)}}" loading="{{btnLoading}}" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">开通乘车码</button>
+		</view>
+	</view>
+</view>

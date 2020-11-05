@@ -1,0 +1,164 @@
+.container-index {
+  min-height: 100vh;
+  background-color: #0080FF;
+}
+.city-picker {
+  position: absolute;
+  top: 112rpx;
+  left: 32rpx;
+  height: 40rpx;
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  font-family: PingFangSC, PingFangSC-Medium;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 40rpx;
+}
+.picker-arrow {
+  width: 24rpx;
+  height: 24rpx;
+  margin-left: 12rpx;
+}
+.userinfo-btn {
+  width: 750rpx !important;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  outline: none;
+  background-color: #0080FF;
+  text-align: left;
+}
+.user-line {
+  margin-bottom: 32rpx;
+  padding: 0 32rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.user-icon {
+  display: inline-block;
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 100%;
+  margin-right: 16rpx;
+}
+.user-name {
+  flex: 1;
+  font-size: 26rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 40rpx;
+}
+.tap-arrow {
+  display: inline-block;
+  width: 44rpx;
+  height: 44rpx;
+}
+/* 二维码部分 */
+.main-body {
+  width: 686rpx;
+  height: 748rpx;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 16rpx;
+  overflow: hidden;
+}
+.card-name {
+  width: 100%;
+  height: 88rpx;
+  background: url('https://images.allcitygo.com/20200925142718799Y5c5t9.png') no-repeat; 
+  background-size: 100% 100%;
+  margin-bottom: 92rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  font-family: PingFangSC, PingFangSC-Medium;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 44rpx;
+}
+.code-ban {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-qrcode-sec {
+  width: 424rpx;
+  height: 424rpx;
+}
+.main-qrcode-sec image {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.main-qrcode-refresh {
+  margin-top: 32rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  color: #888888;
+  line-height: 32rpx;
+}
+.main-qrcode-refresh image {
+  display: inline-block;
+  width: 24rpx;
+  height: 24rpx;
+  margin-right: 8rpx;
+}
+.warn-img {
+  width: 144rpx;
+  height: 144rpx;
+}
+.warn-img image {
+  display: inline-block;
+  width: 144rpx;
+  height: 144rpx;
+}
+.error-msg {
+  margin-top: 32rpx;
+  font-size: 32rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  color: #000000;
+  line-height: 48rpx;
+}
+.error-supply {
+  margin-top: 12rpx;
+  font-size: 26rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  color: #888888;
+  line-height: 40rpx;
+}
+.refresh-btn {
+  width: 360rpx;
+  height: 80rpx;
+  margin-top: 68rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2rpx solid #0080ff;
+  border-radius: 40rpx;
+  font-size: 34rpx;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  color: #0080ff;
+  line-height: 50rpx;
+}
+.turn{ 
+  animation:turn 3s linear infinite;      
+}
+@keyframes turn{
+  0%{-webkit-transform:rotate(0deg);}
+  25%{-webkit-transform:rotate(90deg);}
+  50%{-webkit-transform:rotate(180deg);}
+  75%{-webkit-transform:rotate(270deg);}
+  100%{-webkit-transform:rotate(360deg);}
+}

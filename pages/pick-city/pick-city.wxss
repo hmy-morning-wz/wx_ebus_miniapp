@@ -1,0 +1,29 @@
+.container-pick-city {
+  padding: 0 32rpx;
+}
+.each-city {
+  height: 120rpx;
+  display: flex;
+  align-items: center;
+  font-size: 34rpx;
+  font-family: PingFangSC, PingFangSC-Medium;
+  font-weight: 500;
+  text-align: left;
+  color: #000000;
+  line-height: 50rpx;
+}
+.bot-line {
+  position: relative;
+  width: 686rpx;
+}
+.bot-line::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 686rpx;
+  height: 1px;
+  background-color: #E5E5E5;
+  -webkit-transform: scaleY(.5);
+  transform:scaleY(.5)  
+}

@@ -1,0 +1,40 @@
+<!--pages/record-detail/record-detail.wxml-->
+<wxs module="filters" src="../../utils/filters.wxs"></wxs>
+<view>
+	<view wx:if="{{!recordDetail.outTradeNo}}" class="none-records">
+		<image src="https://images.allcitygo.com/20200907151242393cdScbZ.png" mode="widthFix">
+    </image>
+    <view class="none-text">
+      订单信息生成中，请稍后…
+    </view>
+	</view>
+	<view wx:else class="container-record-detail">
+		<view class="top-amount">
+			<view class="money-amount">
+				-{{ filters.changeFixedTwo(recordDetail.amount) }}
+			</view>
+			<view class="pay-status">
+				{{recordDetail.status === 1 ? '已付款':'未扣款'}}
+			</view>
+		</view>
+		<view class="bot-info">
+			<view class="info-line">
+				<view class="info-left">卡片名称</view>
+				<view class="info-right">{{recordDetail.cardName}}</view>
+			</view>
+			<view class="info-line">
+				<view class="info-left">交易订单号</view>
+				<view class="info-right">{{recordDetail.serialNo}}</view>
+			</view>
+			<view class="info-line">
+				<view class="info-left">交易流水号</view>
+				<view class="info-right">{{recordDetail.outTradeNo}}</view>
+			</view>
+			<view class="info-line">
+				<view class="info-left">交易时间</view>
+				<view class="info-right">{{recordDetail.rideTime}}</view>
+			</view>
+
+		</view>
+	</view>
+</view>
